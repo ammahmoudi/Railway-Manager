@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefWidth="130.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.amg.railwaymanager.RailLineView">
+   <children>
+      <BorderPane fx:id="mainBorderPane" layoutY="-20.0" prefHeight="160.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label fx:id="name_label" text="rail line 1" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <ProgressIndicator fx:id="progressIndicator" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="64.0" progress="0.72" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Label fx:id="status_label" text="iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" wrapText="true" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Label>
+         </bottom>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </BorderPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

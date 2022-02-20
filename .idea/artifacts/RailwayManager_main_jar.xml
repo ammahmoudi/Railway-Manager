@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact name="RailwayManager.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RailwayManager_main_jar</output-path>
+    <root id="root">
+      <element id="archive" name="RailwayManager.main.jar">
+        <element id="module-output" name="RailwayManager.main" />
+      </element>
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-fxml:win:17.0.1" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-web:win:17.0.1" />
+      <element id="library" level="project" name="Gradle: eu.hansolo:tilesfx:11.48" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-media:win:17.0.1" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-base:17.0.1" />
+      <element id="library" level="project" name="Gradle: org.controlsfx:controlsfx:11.1.0" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-media:17.0.1" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-controls:win:17.0.1" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-graphics:17.0.1" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-controls:17.0.1" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-graphics:win:17.0.1" />
+      <element id="library" level="project" name="Gradle: org.kordamp.ikonli:ikonli-javafx:12.2.0" />
+      <element id="library" level="project" name="Gradle: org.kordamp.ikonli:ikonli-core:12.2.0" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-base:win:17.0.1" />
+      <element id="library" level="project" name="Gradle: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" />
+    </root>
+  </artifact>
+</component>
