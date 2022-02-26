@@ -11,6 +11,7 @@ import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -83,7 +84,12 @@ public class TrainView {
                     // do anything you need here on completion...
                 }, new KeyValue(progressIndicator.progressProperty(), 1))
         );
-
+        timeline.setOnFinished(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                railId_input.setDisable(false);
+            }
+        });
         railLineView.setTimeline(new Timeline(
                 new KeyFrame(Duration.ZERO, new KeyValue(railLineView.getProgressIndicator().progressProperty(), 0)),
                 new KeyFrame(Duration.millis(Double.parseDouble(duration_input.getText())), e -> {
@@ -95,11 +101,14 @@ public class TrainView {
         railLineView.getTimeline().setCycleCount(1);
         if(hasGone){
         timeline.play();
-        railLineView.getTimeline().play();}
+        railLineView.getTimeline().play();}else {
+            railId_input.setDisable(true);
+        }
         update();
         MainController.getRailLineViews()[Integer.parseInt(railId_input.getText())].update();
-
     }
+
+
 
     @FXML
     void initialize() {
